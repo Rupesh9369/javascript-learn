@@ -1,4 +1,14 @@
 {
   "cSpell.ignoreWords": ["andnot"],
-  "cSpell.words": ["addhar"]
+  "cSpell.words": ["addhar"],
+  "spellright.language": ["en"],
+  "spellright.documentTypes": ["markdown", "latex", "plaintext"],
+  "cSpell.customDictionaries": {
+    "custom-dictionary-workspace": {
+      "name": "custom-dictionary-workspace",
+      "path": "${workspaceFolder:js}/.cspell/custom-dictionary-workspace.txt",
+      "addWords": true,
+      "scope": "workspace"
+    }
+  }
 }
