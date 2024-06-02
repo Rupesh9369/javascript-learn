@@ -1,3 +1,4 @@
+'use strict'
 console.log('9369');
 
 // let const var

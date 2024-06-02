@@ -1,3 +1,4 @@
+'use strict'
 // console.log('hello coders');
 
 // value is objects or primative

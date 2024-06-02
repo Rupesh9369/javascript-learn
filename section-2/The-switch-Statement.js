@@ -1,3 +1,4 @@
+'use strict'
 console.log(`hello coder ⭐⭐⭐`);
 
 // const day = prompt("Enter the day name in english");

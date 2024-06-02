@@ -1,3 +1,4 @@
+'use strict'
 console.log('Hello Coders 🤡🤡🤡');
 
 // user 1

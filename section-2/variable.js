@@ -1,3 +1,4 @@
+'use strict'
 // let js = "best";
 // //   if (js === "best") alert("js is for all");
 // console.log(95 + 3 + 5);

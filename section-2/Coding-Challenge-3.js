@@ -1,3 +1,4 @@
+'use strict'
 console.log(`HEllo Coders 🤡🤡🤡`);
 
 const TeamA = 'India Team' 

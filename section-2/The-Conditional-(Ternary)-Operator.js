@@ -1,3 +1,4 @@
+'use strict'
 console.log(`hello coder ❌❌❌a`);
 
 // const age = 19 >= 18 ? console.log("True") : console.log("False");

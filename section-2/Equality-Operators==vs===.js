@@ -1,3 +1,4 @@
+'use strict'
 console.log('Hello coder 🤡🤡🤡');
 
 // == vs ===

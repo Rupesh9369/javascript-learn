@@ -1,3 +1,4 @@
+'use strict'
 console.log(`Hello coder ⭐⭐⭐`);
 
 const code = 9 + 1;

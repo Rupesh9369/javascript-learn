@@ -1,3 +1,4 @@
+'use strict'
 console.log("hello coders");
 
 // Strings - and - Template - Literals
