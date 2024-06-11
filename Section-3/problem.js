@@ -67,3 +67,4 @@ console.log(`min1 ${min1} `);
 console.log(`max1 ${max1} `);
 const amplitude1 = calcMM1(tempo1);
 console.log(amplitude1);
+console.log(`Output : `);
