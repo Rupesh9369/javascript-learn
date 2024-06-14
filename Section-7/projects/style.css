@@ -13,6 +13,12 @@ body{
     background-color: #19191a;
     color: var(---text-color);
 }
+.contanier{
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 5%;
+}
 .btn{
     display: flex;
     justify-content: space-evenly;
