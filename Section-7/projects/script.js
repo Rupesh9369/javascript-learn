@@ -14,6 +14,13 @@ document.querySelector(".refresh-btn").addEventListener("click", function () {
   document.querySelector(".box-js-number").textContent = " ";
   document.querySelector(".num-change").textContent = main_num;
 });
+const visi_able = function () {
+  document.querySelector(".popup").style.visibility = "visible";
+  
+}
+const refactor = function (msg) {
+  document.querySelector(".msg").textContent = `You Lose The Game`;
+}
 document.querySelector(".check-btn").addEventListener("click", function () {
   const check_num = Number(document.querySelector(".box-js-number").value);
   if (!check_num) {
@@ -23,8 +30,9 @@ document.querySelector(".check-btn").addEventListener("click", function () {
       score--;
       document.querySelector(".score-num").textContent = score;
     } else {
-      document.querySelector(".msg").textContent = `You Lose The Game`;
-      document.querySelector("popup").style.visibility = "visible";
+      // document.querySelector(".msg").textContent = `You Lose The Game`;
+      refactor(`You Lose The Game`);
+      visi_able();
     }
   } else if (check_num === main_num) {
     document.querySelector(".msg").textContent = "🔥 Correct Number";
@@ -40,24 +48,36 @@ document.querySelector(".check-btn").addEventListener("click", function () {
       high_score = score;
       document.querySelector(".high-score-num").textContent = high_score;
     }
-  } else if (check_num > main_num) {
+  } else if (check_num !== main_num) {
     if (score > 1) {
-      document.querySelector(".msg").textContent = "🧨 Number Is To big ";
+      document.querySelector(".msg").textContent =
+        check_num > main_num ? " 💔 Number is to high" : "🤡 number is to low ";
       score--;
       document.querySelector(".score-num").textContent = score;
       document.querySelector("body").style.backgroundColor = "red";
     } else {
-      document.querySelector(".msg").textContent = `You Lose The Game`;
-      document.querySelector("popup").style.visibility = "visible";
+      // document.querySelector(".msg").textContent = `You Lose The Game`;
+      refactor(`You Lose The Game`);
+      visi_able();
     }
-  } else if (check_num < main_num) {
-    if (score > 1) {
-      document.querySelector(".msg").textContent = "💋 Number Is To Small ";
-      score--;
-      document.querySelector(".score-num").textContent = score;
-    } else {
-      document.querySelector(".msg").textContent = `You Lose The Game`;
-      document.querySelector(".popup").style.visibility = "visible";
-    }
+  // } else if (check_num > main_num) {
+  //   if (score > 1) {
+  //     document.querySelector(".msg").textContent = "🧨 Number Is To big ";
+  //     score--;
+  //     document.querySelector(".score-num").textContent = score;
+  //     document.querySelector("body").style.backgroundColor = "red";
+  //   } else {
+  //     document.querySelector(".msg").textContent = `You Lose The Game`;
+  //     document.querySelector("popup").style.visibility = "visible";
+  //   }
+  // } else if (check_num < main_num) {
+  //   if (score > 1) {
+  //     document.querySelector(".msg").textContent = "💋 Number Is To Small ";
+  //     score--;
+  //     document.querySelector(".score-num").textContent = score;
+  //   } else {
+  //     document.querySelector(".msg").textContent = `You Lose The Game`;
+  //     document.querySelector(".popup").style.visibility = "visible";
+  //   }
   }
 });
