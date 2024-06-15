@@ -35,7 +35,7 @@ document.querySelector(".check-btn").addEventListener("click", function () {
       visi_able();
     }
   } else if (check_num === main_num) {
-    document.querySelector(".msg").textContent = "🔥 Correct Number";
+    refactor("🔥 Correct Number");
     // break;
 
     document.body.style.backgroundColor = "green";
